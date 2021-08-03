@@ -1,0 +1,150 @@
+*,
+::after,
+::before {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Pacifico', cursive, 'Poppins', sans-serif;
+}
+header {
+	height: 10vh;
+	width: 100%;
+	background: #212529;
+	display: flex;
+	justify-content: space-between;
+	position: sticky;
+}
+.logo h2 {
+	font-family: 'Pacifico', cursive;
+	color: #ffc800;
+	padding: 20px;
+	cursor: pointer;
+	font-style: italic;
+	word-spacing: 10px;
+}
+.nav-items {
+	width: 900px;
+	text-align: center;
+	margin: 20px 40px 0 0;
+}
+.nav-ul-items {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	list-style-type: none;
+	gap: 20px;
+	cursor: pointer;
+}
+.nav-ul-items li {
+	padding: 10px;
+}
+
+.nav-ul-items a {
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 17px;
+	letter-spacing: 1px;
+	transition: all 0.5s;
+}
+.nav-ul-items a:hover {
+	color: #ffc800;
+}
+.fas {
+	color: white;
+	font-size: 20px;
+}
+.topic-container {
+	background-image: url('./header-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.details-container h3 {
+	font-size: 3rem;
+	font-style: italic;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+.details-container h1 {
+	font-size: 6em;
+	font-weight: bolder;
+	color: white;
+}
+.details-button button {
+	margin-top: 30px;
+	flex: 1;
+	width: 200px;
+	padding: 12px;
+	border-radius: 5px;
+	background-color: #ffc800;
+	border: none;
+	outline: none;
+	font-size: 1.6em;
+	font-weight: 700;
+	color: white;
+	text-emphasis: none;
+	text-align: center;
+	transition: all 0.5s;
+	vertical-align: middle;
+}
+.details-button button:hover {
+	opacity: 0.9;
+}
+button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+button:hover span {
+	padding-right: 25px;
+}
+
+button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+@media (min-width: 1200px) {
+	.logo {
+		font-size: 20px;
+	}
+}
+.creator {
+	font-style: italic;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	opacity: 0.4;
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+	text-align-last: right;
+	border-bottom: 1px solid white;
+}
+#loki {
+	color: white;
+	font-size: 20px;
+	font-weight: bolder;
+	font-style: normal;
+	font-family: 'Rock Salt', cursive;
+}
